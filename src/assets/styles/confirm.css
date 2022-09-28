@@ -1,0 +1,10 @@
+.checkConfirm{
+    margin-top: 10px    ;
+    display: flex;
+    flex-direction: row;
+}
+
+.checkConfirm input[type="checkbox"]{
+    width: 3vh;
+}
+
