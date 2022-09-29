@@ -1,60 +1,59 @@
-import CardAsk from "./CardAsk";
+import CardAsk from "./CardAsk"
 
 function Ask() {
-        // Formulario para entregar comida a domicilio
     const requests =[
         {
-            ask: "Name: ", 
-            idF: "nameForm",
+            content: "Name: ", 
+            id: "nameForm",
             type: "text"
         },
         {
-            ask: "LastName: ", 
-            idF: "lastNameForm",
+            content: "LastName: ", 
+            id: "lastNameForm",
             type: "text"
         },
         {
-            ask: "Email: ", 
-            idF: "emailForm",
+            content: "Email: ", 
+            id: "emailForm",
+            type: "email"
+        },
+        {
+            content: "Direction: ", 
+            id: "directionForm",
             type: "text"
         },
         {
-            ask: "Direction: ", 
-            idF: "directionForm",
-            type: "text"
-        },
-        {
-            ask: "Telephone: ", 
-            idF: "telephoneForm",
+            content: "Telephone: ", 
+            id: "telephoneForm",
             type: "number"
         },
         {
-            ask: "Telephone2: ", 
-            idF: "telephone2Form",
+            content: "Telephone2: ", 
+            id: "telephone2Form",
             type: "number"
         },
         {
-            ask: "Key word: ", 
-            idF: "keyWordClaveForm",
+            content: "Key word: ", 
+            id: "keyWordClaveForm",
             type: "number"
         }
     ];
-    return (
-        <div>
-            <h2>Form of Eatest</h2>
-            {requests.map((request)=>{
-                    return(
-                        <CardAsk
-                            ask={request.ask}
-                            idF={request.idF}
-                            type={request.type}
-                        />
-                    )
-                })
-            }
-
-        </div> 
-    )
+    return ( 
+        <>
+        <h2>Register Eatest</h2>
+        {requests.map((request)=>{
+            return(
+                <CardAsk    
+                    content={request.content}
+                    id={request.id}
+                    type={request.type}
+                />
+            )
+        })}
+        
+        </>
+     
+    );
 }
 
 export default Ask;

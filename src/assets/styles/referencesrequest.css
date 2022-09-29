@@ -1,0 +1,13 @@
+textarea{
+    resize: none;
+    margin-top: 10px;
+    text-decoration: none;
+
+    background-color: #F9E8C7 ;
+    border-color: #BB462E;
+    outline: none;
+    font-size: 20px;
+    width: 100%;
+    color: rgb(7, 0, 0);
+    height: 20vh;
+}

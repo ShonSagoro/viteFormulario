@@ -1,17 +1,19 @@
-import Ask from "./Ask";
-import Confirm from "./Confirm";
-import Reference from "./References";
-import Select from "./Select";
 import "../assets/styles/form.css"
+import Ask from "./Ask";
+import AskReference from "./AskReference";
+import AskConfirm from "./AskConfirm";
+import ButtonSubmitRequest from "../atoms/ButtonSubmitRequest";
+// import AskSelect from "./AskSelect";
+
 
 function Form() {
     return ( 
-
         <div className="form">
             <Ask></Ask>
-            <Reference></Reference>
-            <Select></Select>
-            <Confirm></Confirm>
+            <AskReference></AskReference>
+            {/* <AskSelect></AskSelect> */}
+            <AskConfirm></AskConfirm>
+            <ButtonSubmitRequest></ButtonSubmitRequest>
         </div>
      );
 }
