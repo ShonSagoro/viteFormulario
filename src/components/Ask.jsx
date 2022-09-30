@@ -34,8 +34,18 @@ function Ask() {
         },
         {
             content: "Key word: ", 
-            id: "keyWordClaveForm",
+            id: "keyWordForm",
             type: "number"
+        },
+        {
+            content: "Password: ", 
+            id: "passwordForm",
+            type: "password"
+        },
+        {
+            content: "Confirm password: ", 
+            id: "confirmpasswordForm",
+            type: "password"
         }
     ];
     return ( 

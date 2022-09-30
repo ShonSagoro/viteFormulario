@@ -3,7 +3,7 @@ import Input from "../atoms/InputRequest"
 
 function CardAsk(props) {
     return ( 
-        <div id={props.id+"div"}>
+        <div>
             <Label
                 id={props.id}
                 content={props.content}

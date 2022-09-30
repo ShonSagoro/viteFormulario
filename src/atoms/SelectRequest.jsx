@@ -1,10 +1,10 @@
 import "../assets/styles/selectrequest.css"
 
-function SelecRequest(children) {
+function SelecRequest(props) {
     return (  
         <>
-            <select>
-                {children}
+            <select id={props.id}>
+                {props.children}
             </select>
         </>
     );

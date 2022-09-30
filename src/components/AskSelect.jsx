@@ -1,19 +1,35 @@
-import OptionRequest from "../atoms/OptionRequest";
-import SelecRequest from "../atoms/SelectRequest";
-
+import CardSelect from "./CardSelect";
 function AskSelect() {
-    const options=["Alone","My partner","Family"]
+    const requests=[
+        {
+            content: "Who do you live with?",
+            id: "live_with",
+            options: [
+                {
+                    value: "Alone"
+                },
+                {
+                    value: "With parents"
+                },
+                {
+                    value: "With family"
+                }
+            ]
+        }
+    ]
     return ( 
         <>
-            <SelecRequest>
-                {options.forEach(option => {
-                    return(
-                        <OptionRequest
-                            value={option}
+         {requests.map((request)=>{
+                return(
+                    <>
+                        <CardSelect
+                            content={request.content}
+                            id={request.id}
+                            options={request.options}
                         />
-                    )
-                })}
-            </SelecRequest>
+                    </>   
+                )
+        })}
             
         </>
      );

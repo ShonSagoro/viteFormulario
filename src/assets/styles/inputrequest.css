@@ -3,7 +3,7 @@ input{
     margin-bottom: 20px;
 }
 
-input[type="text"],  input[type="number"],  input[type="email"]{
+input[type="text"],  input[type="number"],  input[type="email"], input[type="password"]{
     border-color: #BB462E;
     background-color: #FBDFAA ;
     outline: none;
